@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Kanban Board</h1>
+
+<div class="input-section">
+    <input type="text" id="taskInput" placeholder="Enter your task...">
+    <button onclick="addTask()">➕ Add</button>
+</div>
+
+<div class="board">
+    <div class="column" id="todo" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h2>Todo</h2>
+    </div>
+
+    <div class="column" id="inprogress" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h2>In Progress</h2>
+    </div>
+
+    <div class="column" id="done" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h2>Done</h2>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<footer>
+    <p>© 2026 Kanban Board | Developed by Ravindar Singh Rajput</p>
+</footer>
+</body>
+</html>
